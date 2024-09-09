@@ -6,10 +6,9 @@ const fullNameError = document.getElementById("fullNameError");
 const emailError = document.getElementById("emailError");
 const passwordError = document.getElementById("passwordError");
 const submitButton = document.getElementById("submitButton");
-const loginBtn = document.getElementById("loginBtn");
 
 form.addEventListener("submit", (e) => {
-  // e.preventDefault();
+  e.preventDefault();
 
   let errors = [];
 
@@ -66,6 +65,6 @@ dataInputs.forEach((input, index) => {
   }
 });
 
-loginBtn.onclick = function () {
-  window.location.href = "portfolio.html";
+submitButton.onclick = function () {
+  window.location.href = "login.html";
 };
